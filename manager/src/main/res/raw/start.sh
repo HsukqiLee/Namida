@@ -1,7 +1,7 @@
 #!/system/bin/sh
 
 SOURCE_PATH="%%%STARTER_PATH%%%"
-STARTER_PATH="/data/local/tmp/shizuku_starter"
+STARTER_PATH="/data/local/tmp/namida/starter"
 
 echo "info: start.sh begin"
 
