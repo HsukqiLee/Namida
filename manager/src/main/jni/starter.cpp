@@ -294,7 +294,7 @@ int main(int argc, char **argv) {
 
     LOGD("applet %s", base.data());
 
-    constexpr const char *applet_names[] = {"shizuku_starter", nullptr};
+    constexpr const char *applet_names[] = {"starter", nullptr};
 
     for (int i = 0; applet_names[i]; ++i) {
         if (base == applet_names[i]) {
