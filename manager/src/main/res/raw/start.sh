@@ -9,6 +9,7 @@ recreate_tmp() {
   echo "info: /data/local/tmp is possible broken, recreating..."
   rm -rf /data/local/tmp
   mkdir -p /data/local/tmp
+  mkdir -p /data/local/tmp/namida
 }
 
 broken_tmp() {
