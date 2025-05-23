@@ -184,8 +184,8 @@ int starter_main(int argc, char *argv[]) {
     se::init();
 
     if (uid == 0) {
-        chown("/data/local/tmp/shizuku_starter", 2000, 2000);
-        se::setfilecon("/data/local/tmp/shizuku_starter", "u:object_r:shell_data_file:s0");
+        chown("/data/local/tmp/namida/starter", 2000, 2000);
+        se::setfilecon("/data/local/tmp/namida/starter", "u:object_r:shell_data_file:s0");
         switch_cgroup();
 
         int sdkLevel = 0;
@@ -215,11 +215,11 @@ int starter_main(int argc, char *argv[]) {
         }
     }
 
-    mkdir("/data/local/tmp/shizuku", 0707);
-    chmod("/data/local/tmp/shizuku", 0707);
+    mkdir("/data/local/tmp/namida", 0707);
+    chmod("/data/local/tmp/namida", 0707);
     if (uid == 0) {
-        chown("/data/local/tmp/shizuku", 2000, 2000);
-        se::setfilecon("/data/local/tmp/shizuku", "u:object_r:shell_data_file:s0");
+        chown("/data/local/tmp/namida", 2000, 2000);
+        se::setfilecon("/data/local/tmp/namida", "u:object_r:shell_data_file:s0");
     }
 
     printf("info: starter begin\n");
