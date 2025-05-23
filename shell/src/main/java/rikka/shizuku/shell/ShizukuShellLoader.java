@@ -104,7 +104,7 @@ public class ShizukuShellLoader {
         String optimizedDirectory = ".";
         File optimizedDirectoryFile = new File(optimizedDirectory);
         if (!optimizedDirectoryFile.exists() || !optimizedDirectoryFile.isDirectory()  || !optimizedDirectoryFile.canWrite() || !optimizedDirectoryFile.canExecute()) {
-            optimizedDirectory = "/data/local/tmp/rish-shizuku-" + BuildConfig.VERSION_CODE;
+            optimizedDirectory = "/data/local/tmp/namida/rish-namida-" + BuildConfig.VERSION_CODE;
             optimizedDirectoryFile = new File(optimizedDirectory);
             optimizedDirectoryFile.mkdirs();
             try {
